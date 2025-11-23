@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - University Alumni System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>University Alumni System</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <h2>Login</h2>
+        <form onsubmit="event.preventDefault(); loginUser();">
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+            <label for="password">Password:</label><br>
+            <input type="password" id="password" placeholder="Enter your password" required><br><br>
+
+            <label for="userType">User Type:</label><br>
+            <select id="userType" required>
+                <option value="alumni">Alumni</option>
+                <option value="admin">Admin</option>
+                <option value="staff">Staff</option>
+            </select><br><br>
+
+            <button type="submit">Login</button>
+        </form>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Contact us: university@email.com | Phone: +256 xxx xxx xxx</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
