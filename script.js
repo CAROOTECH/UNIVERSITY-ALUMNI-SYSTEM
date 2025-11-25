@@ -1,53 +1,20 @@
-<<<<<<< HEAD
-// Load profile from localStorage when the page loads
-window.onload = function() {
-    if(localStorage.getItem("name")){
-        document.getElementById("name").value = localStorage.getItem("name");
-        document.getElementById("email").value = localStorage.getItem("email");
-        document.getElementById("program").value = localStorage.getItem("program");
-        document.getElementById("year").value = localStorage.getItem("year");
+console.log("JavaScript is working!");
+function loginUser() {
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const userType = document.getElementById("userType").value;
+
+    // Simple prototype login check
+    if(userType === "alumni"){
+        alert("Login successful as Alumni!");
+        window.location.href = "dashboard.html"; // we will create this next
+    } else if(userType === "admin"){
+        alert("Login successful as Admin!");
+        window.location.href = "admin.html"; // we will create this next
+    } else if(userType === "staff"){
+        alert("Login successful as Staff!");
+        window.location.href = "staff.html"; // we will create this next
+    } else {
+        alert("Invalid login!");
     }
 }
-
-// Save profile function
-function saveProfile() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const program = document.getElementById("program").value;
-    const year = document.getElementById("year").value;
-
-    localStorage.setItem("name", name);
-    localStorage.setItem("email", email);
-    localStorage.setItem("program", program);
-    localStorage.setItem("year", year);
-
-    alert("Profile saved successfully!");
-    window.location.href = "profile.html"; // Go back to profile page
-}
-=======
-// Load profile from localStorage when the page loads
-window.onload = function() {
-    if(localStorage.getItem("name")){
-        document.getElementById("name").value = localStorage.getItem("name");
-        document.getElementById("email").value = localStorage.getItem("email");
-        document.getElementById("program").value = localStorage.getItem("program");
-        document.getElementById("year").value = localStorage.getItem("year");
-    }
-}
-
-// Save profile function
-function saveProfile() {
-    const name = document.getElementById("name").value;
-    const email = document.getElementById("email").value;
-    const program = document.getElementById("program").value;
-    const year = document.getElementById("year").value;
-
-    localStorage.setItem("name", name);
-    localStorage.setItem("email", email);
-    localStorage.setItem("program", program);
-    localStorage.setItem("year", year);
-
-    alert("Profile saved successfully!");
-    window.location.href = "profile.html"; // Go back to profile page
-}
->>>>>>> 289a2532c0a06b1ef6b89a0746b8e1bffc0c0fe0
