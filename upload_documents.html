@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Documents - Staff</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Staff Dashboard - University Alumni System</h1>
+    <nav>
+        <a href="staff_dashboard.html">Dashboard</a>
+        <a href="view_alumni.html">View Alumni</a>
+        <a href="generate_reports.html">Generate Reports</a>
+        <a href="post_events.html">Post Events</a>
+        <a href="upload_documents.html">Upload Documents</a>
+        <a href="logout.html">Logout</a>
+    </nav>
+</header>
+
+<main>
+    <h2>Upload Documents</h2>
+    <p>Upload newsletters, e-books, or other alumni resources.</p>
+
+    <form enctype="multipart/form-data">
+        <label for="doc-name">Document Name:</label><br>
+        <input type="text" id="doc-name" name="doc-name"><br><br>
+
+        <label for="doc-file">Select File:</label><br>
+        <input type="file" id="doc-file" name="doc-file"><br><br>
+
+        <button type="submit">Upload Document</button>
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 University Alumni System | All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
